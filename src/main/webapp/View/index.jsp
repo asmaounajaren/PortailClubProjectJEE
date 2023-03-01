@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Argan Store</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-    <link rel="icon" href="images/icon.png" />
+    <link rel="icon" href="../images/icon.png" />
 </head>
 <body>
 <nav>
@@ -30,7 +30,7 @@
 </nav>
 <section>
     <div class="wrapper">
-        <img src="images/wrapper.jpg" alt="" />
+        <img src="../images/wrapper.jpg" alt="" />
         <div>
             <span>Pratical Informations</span>
             <p>
@@ -51,7 +51,7 @@
 
         <div class="products">
             <div class="product-item">
-                <img src="images/product1.jpg" alt="" />
+                <img src="../images/product1.jpg" alt="" />
                 <div class="description">
                     <h3 class="title">Argan oil</h3>
                     <p class="desc">
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="images/product2.jpg" alt="" />
+                <img src="../images/product2.jpg" alt="" />
                 <div class="description">
                     <h3 class="title">Argan Oil Hair Serum</h3>
                     <p class="desc">
@@ -92,7 +92,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="images/product3.png" alt="" />
+                <img src="../images/product3.png" alt="" />
                 <div class="description">
                     <h3 class="title">Sulfate-Free Hair Mask</h3>
                     <p class="desc">
@@ -112,7 +112,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="images/product4.jpg" alt="" />
+                <img src="../images/product4.jpg" alt="" />
                 <div class="description">
                     <h3 class="title">Argan Oil Moisturizer</h3>
                     <p class="desc">
