@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Argan Store</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Home | City Club</title>
+    <link rel="stylesheet" href="styleee.css" />
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-    <link rel="icon" href="../images/icon.png" />
+    <link rel="icon" href="images/iconcityclup.PNG" />
 </head>
 <body>
 <nav>
     <div class="container">
-        <h1 class="logo"><a href="index.html">ARGAN STORE</a></h1>
+        <h1 class="logo"><a href="index.html">CITY CLUB</a></h1>
         <div class="menu">
             <ul>
                 <li class="where"><a href="index.jsp">Home</a></li>
                 <li>
-                    <a href="Foreign Distribution.jsp">Foreign Distribution</a>
+                    <a href="réserver séance gratuit.jsp">Réserver Séance</a>
                 </li>
-                <li><a href="About us.jsp">About Us</a></li>
+                <li><a href="">CRUD</a></li>
                 <li><a href="Contact us.jsp">Contact</a></li>
             </ul>
         </div>
@@ -30,33 +30,33 @@
 </nav>
 <section>
     <div class="wrapper">
-        <img src="../images/wrapper.jpg" alt="" />
+        <img src="images/City-Club.jpg" alt="" />
         <div>
             <span>Pratical Informations</span>
             <p>
-                The tree of Argan doesn't come into existence only yesterday, its
-                origins go back to the tertiary era, in the regions of the southwest
-                of Morocco, the only place in the world where one can find it. The
-                fruit of the Arganier contains a very hard core that possesses an
-                oil of very high biologic, nutritional quality and has multiple
-                virtues (medical, cosmetical).
+                Une salle de sport (aussi appelé centre de remise en forme, centre de fitness ou centre de gym)
+                est un lieu où sont rassemblés des équipements permettant la pratique d'exercices d'activité physique.
             </p>
             <button>Explore Now</button>
         </div>
     </div>
     <div class="container">
         <div class="featured-catagories">
-            <h2>Featured Catagories</h2>
+            <h2>Featured Activity</h2>
         </div>
 
         <div class="products">
             <div class="product-item">
-                <img src="../images/product1.jpg" alt="" />
+                <img src="images/11.PNG" alt="" />
                 <div class="description">
-                    <h3 class="title">Argan oil</h3>
+                    <h3 class="title">AQUAGYM
+
+
+                    </h3>
                     <p class="desc">
-                        This oil combines the nourishing power of Organic Argan Oil soft
-                        and soothing scents , it's essential for a relaxing sensation
+                        TL’aquagym est un sport complet qui fait travailler de nombreux muscles
+                        (abdominaux, fessiers, cuisses, bras, épaules)…
+                        Les bienfaits sont à la fois d’ordre esthétique et du côté de la santé
                     </p>
                     <div class="stars-price">
                         <div class="stars">
@@ -71,13 +71,13 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="../images/product2.jpg" alt="" />
+                <img src="images/12.PNG" alt="" />
                 <div class="description">
-                    <h3 class="title">Argan Oil Hair Serum</h3>
+                    <h3 class="title">CIRCUIT MINCEUR</h3>
                     <p class="desc">
-                        Luseta Argan Oil Hair Serum offers the hair strands the ultimate
-                        protection from UV rays and the damaging effects of heat
-                        styling.
+                        Pour avoir un ventre plat, il est indispensable
+                        de travailler la ceinture abdominale !
+                        Circuit Minceur est destiné à activer le métabolisme, l’endurance
                     </p>
                     <div class="stars-price">
                         <div class="stars">
@@ -92,12 +92,12 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="../images/product3.png" alt="" />
+                <img src="images/13.PNG" alt="" />
                 <div class="description">
-                    <h3 class="title">Sulfate-Free Hair Mask</h3>
+                    <h3 class="title">DANCE AFRO</h3>
                     <p class="desc">
-                        Hydrating hair mask for dry damaged hair with Argan Oil & Aloe
-                        helps restore, repair, & smooth frizzy hair
+                        L’afro-dance est un mix de mouvements de danses traditionnelles,
+                        de Hip-hop ou autres danses d’origine occidentale.
                     </p>
                     <div class="stars-price">
                         <div class="stars">
@@ -112,12 +112,13 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="../images/product4.jpg" alt="" />
+                <img src="images/14.PNG" alt="" />
                 <div class="description">
-                    <h3 class="title">Argan Oil Moisturizer</h3>
+                    <h3 class="title"> FUNCTIONAL ARMY</h3>
                     <p class="desc">
-                        Creme of Nature's Oil Moisturizer is a rich nourishing formula
-                        that restores moisture and protects hair.
+                        Functional City Army est la reprise des exercises du Cross
+                        training basée sur des efforts intenses pour une silhouette
+                        affinée et des muscles saillants.
                     </p>
                     <div class="stars-price">
                         <div class="stars">
@@ -135,29 +136,17 @@
     </div>
     <div class="argan-desc">
         <div>
-            <span>What You Need To Know When Buying Argan Oil In Morocco</span>
+            <span>Qu est -qu un CLUB CITY LADY ?</span>
             <p>
-                Used by the local Amazigh people of Morocco for its ability to help
-                heal the look of scars and for soothing rheumatic problems – among
-                many other beneficial qualities – argan oil today is one of the
-                hottest beauty products on the market. It is widely available in
-                spice shops throughout the medinas of Morocco, but the quality
-                varies, as does the price. With few regulations guiding the
-                ‘certified bio’ classification, one really has to know their argan
-                oil facts to be sure it’s the real deal. Whether you’re out for its
-                healing powers, or in need of a new nutty flavor for your culinary
-                adventures, here’s what to look for when buying argan oil in
-                Morocco.
+                Les clubs CITYLADY représentent l’espace 100% femmes du réseau CityClub.
+                Ils ont été étudiés pour répondre aux besoins et aux attentes des femmes sur 3 générations
+                qui souhaitent mincir, se tonifier et se détendre en toute intimité, avec des résultats durables
             </p>
-            <span>Color and Consistency</span>
+            <span>Qu est -ce qu un CLUB CITE DES SPORTS ?</span>
             <p>
-                True argan oil should be clear, although somewhat murky, but dull
-                yellow in color. Anything too golden may indicate that the argan oil
-                has been mixed with other oil varieties to keep costs low. After
-                all, 30 kilograms of nuts are required to produce one kilogram of
-                oil. The oil should be rather light when applied to the skin, and
-                even though the skin may not absorb it quickly, over time it will.
-                Oil that washes off in the shower the next day may not be of the
+                Les clubs CITÉS DES SPORTS sont des MÉGA CLUBS d’une grande superficie allant jusqu’à 6000m²,
+                et qui disposent de toutes les activités ainsi que des espaces Football, Basketball et MMA,
+                avec des espaces CITYLADY 100% femmes.
             </p>
         </div>
     </div>
@@ -169,9 +158,9 @@
             <ul>
                 <li><a href="index.jsp">Home</a></li>
                 <li>
-                    <a href="Foreign Distribution.jsp">Foreign Distribution</a>
+                    <a href="réserver séance gratuit.jsp">Réserver Séance</a>
                 </li>
-                <li><a href="commander.jsp">About Us</a></li>
+                <li><a href="">CRUD</a></li>
                 <li class="where"><a href="Contact us.jsp">Contact Us</a></li>
             </ul>
         </div>
@@ -185,24 +174,24 @@
             <ul>
                 <li>
                     <a href=""
-                    ><i class="fab fa-facebook-square"></i>arga_facebook.com</a
+                    ><i class="fab fa-facebook-square"></i>CityClub_facebook.com</a
                     >
                 </li>
                 <li>
                     <a href=""
-                    ><i class="fab fa-instagram-square"></i>arga_instagram.com</a
+                    ><i class="fab fa-instagram-square"></i>CityClub_instagram.com</a
                     >
                 </li>
                 <li>
                     <a href=""
-                    ><i class="fas fa-envelope-square"></i>arga_gmail.com</a
+                    ><i class="fas fa-envelope-square"></i>CityClub_gmail.com</a
                     >
                 </li>
             </ul>
         </div>
     </div>
     <div class="copyright">
-        Copyright © 2023, Argan Store, All rights reserved
+        Copyright © 2023, City Clup, All rights reserved
     </div>
 </footer>
 </body>

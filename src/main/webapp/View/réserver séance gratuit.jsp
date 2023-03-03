@@ -1,10 +1,16 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: Fujitsu
+  Date: 3/1/2023
+  Time: 09:13 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | City Club</title>
+    <title>Réserver Séance | City Club</title>
     <link rel="stylesheet" href="styleee.css" />
     <link
             rel="stylesheet"
@@ -12,7 +18,7 @@
     />
     <link rel="icon" href="images/iconcityclup.PNG" />
 </head>
-<body>
+body>
 <nav>
     <div class="container">
         <h1 class="logo"><a href="index.jsp">City Club</a></h1>
@@ -31,24 +37,23 @@
 <section>
     <div class="container">
         <div class="contact-us">
-            <span>REMPLISSEZ LE FORMULAIRE</span>
-            <h3>CITYCLUB est à l’écoute, nous serions très ravis d’être en contact avec vous.</h3>
+            <span>RÉSERVER MA CARTE</span>
+            <h3>Indiquez vos coordonnées, on vous rappelle !</h3>
             <form action="">
-                <%--@declare id="name"--%><%--@declare id="email"--%><label for="Name">Name</label>
+                <%--@declare id="name"--%><%--@declare id="email"--%><%--@declare id="ville"--%><label for="Name">Name</label>
                 <input type="text" name="Name" />
                 <label for="Email">Email</label>
                 <input type="email" name="Email" />
                 <label for="Name">Phone Number</label>
                 <input type="text" name="Phone Number" />
-                <label for="Name">Message</label>
-                <textarea
-                        name=""
-                        id=""
-                        cols="30"
-                        rows="10"
-                        name="Message"
-                ></textarea>
-                <button class="submit-btn">Submit</button>
+                    <label for="ville">Ville</label>
+                    <select name="Ville" id="Ville">
+                        <option value="Rabat">Rabat</option>
+                        <option value="Agadir">Agadir</option>
+                        <option value="Tanger">Tanger</option>
+                        <option value="Casa Blanca">Casa Blanca</option>
+                    </select>
+                <button class="submit-btn">RÉSERVER</button>
             </form>
         </div>
     </div>
@@ -62,7 +67,7 @@
                 <li>
                     <a href="réserver séance gratuit.jsp">Réserver Séance</a>
                 </li>
-                <li><a href="commander.jsp">CRUD</a></li>
+                <li><a href="">CRUD</a></li>
                 <li><a href="Contact us.jsp">Contact Us</a></li>
             </ul>
         </div>
@@ -76,7 +81,7 @@
             <ul>
                 <li>
                     <a href=""
-                    ><i class="fab fa-facebook-square"></i>City Club_facebook.com</a
+                    ><i class="fab fa-facebook-square"></i>aCity Club_facebook.com</a
                     >
                 </li>
                 <li>
@@ -86,8 +91,7 @@
                 </li>
                 <li>
                     <a href=""
-                    ><i class="fas fa-envelope-square"></i>City Club_gmail.com</a
-                    >
+                    ><i class="fas fa-envelope-square"></i>City Club_gmail.com</a>
                 </li>
             </ul>
         </div>
