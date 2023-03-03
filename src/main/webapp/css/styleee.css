@@ -16,11 +16,11 @@ ul li {
 
 a {
   text-decoration: none;
-  color: #775009;
+  color:#FFA500;
 }
 
 .where {
-  background-color: #bb4800;
+  background-color: #FFA500;
 }
 .where a {
   color: #fff;
@@ -35,12 +35,12 @@ nav .logo {
   float: left;
   font-size: 30px;
   font-weight: 700;
-  color: #58240a;
+  color: #FFA500;
   line-height: 50px;
   letter-spacing: 1.5px;
 }
 nav .logo a {
-  color: #58240a;
+  color: #FFA500;
 }
 
 nav .menu {
@@ -63,14 +63,14 @@ nav .menu ul li {
   transition: background-color 0.5s;
 }
 nav .menu ul li:hover {
-  background-color: #58240a;
+  background-color: #FFA500;
 }
 nav .menu ul li:hover a {
   color: #fff;
 }
 
 footer {
-  background-color: #58240a;
+  background-color: #FFA500;
   padding: 10px;
 }
 .footer-content {
@@ -137,7 +137,7 @@ footer .menu span {
   border: 0;
   width: 250px;
   height: 34px;
-  color: #58240a;
+  color: #FFA500;
 }
 .newlister button {
   outline: 0;
@@ -151,7 +151,7 @@ footer .menu span {
   padding: 8px 0;
 }
 .newlister button:hover {
-  color: #58240a;
+  color: #FFA500;
   background-color: #fff;
 }
 .social-media {
@@ -181,19 +181,19 @@ footer .menu span {
   position: relative;
 }
 .wrapper div span {
-  color: #58240a;
+  color: #FFA500;
   font-size: 50px;
   display: block;
   font-weight: 700;
 }
 .wrapper div p {
-  color: #58240a;
+  color: #FFA500;
   font-size: 21px;
   font-weight: 600;
   margin: 35px 0;
 }
 .wrapper div button {
-  background-color: #58240a;
+  background-color: #FFA500;
   color: #fff;
   font-size: 21px;
   font-weight: 600;
@@ -207,8 +207,8 @@ footer .menu span {
 }
 .wrapper div button:hover {
   background-color: transparent;
-  color: #58240a;
-  border: 2px solid #58240a;
+  color: #FFA500;
+  border: 2px solid #FFA500;
 }
 .wrapper div {
   width: 45%;
@@ -223,13 +223,13 @@ footer .menu span {
   font-size: 35px;
   font-weight: 700;
   text-align: center;
-  color: #8e563bf2;
+  color: #FFA500;
 }
 .featured-catagories h2::after {
   content: "";
   width: 160px;
   height: 6px;
-  background-color: #8e563bf2;
+  background-color: #FFA500;
   display: block;
   margin: auto;
 }
@@ -261,11 +261,11 @@ footer .menu span {
 
 .product-item .description h3 {
   text-align: center;
-  color: #58240a;
+  color:#FFA500;
 }
 .product-item .description .desc {
   text-align: center;
-  color: #8e563bf2;
+  color: #FFA500;
 }
 .stars-price {
   margin: 20px auto 0;
@@ -280,7 +280,7 @@ footer .menu span {
   float: left;
 }
 .stars-price .price {
-  color: #58240a;
+  color: #FFA500;
   float: right;
   font-weight: 700;
 }
@@ -288,7 +288,7 @@ footer .menu span {
 .argan-desc {
   position: relative;
   text-align: center;
-  background-image: url(../images/agan-desc.jpg);
+  background-image: url(images/tgg.jpeg);
   background-attachment: fixed;
   width: 100%;
   background-repeat: no-repeat;
@@ -323,7 +323,7 @@ footer .menu span {
 }
 .foreign-distribution h2 {
   text-align: center;
-  color: #b88354;
+  color: #FFA500;
   text-decoration: underline;
 }
 .foreign-distribution img {
@@ -343,17 +343,17 @@ footer .menu span {
   width: 100%;
   font-size: 30px;
   font-weight: 700;
-  color: #b88354;
+  color: #FFA500;
   text-decoration: underline;
 }
 .about-us h2 {
-  color: #b88354;
+  color: #FFA500;
   text-align: center;
   text-decoration: underline;
   margin: 40px auto;
 }
 .about-us p {
-  color: #b88354;
+  color: #FFA500;
   text-align: center;
   width: 80%;
   margin: auto;
@@ -367,28 +367,36 @@ footer .menu span {
   margin: auto;
 }
 .contact-us form label {
-  color: #b88354;
+  color: #FFA500;
   display: block;
   margin-top: 20px;
 }
 .contact-us form input {
-  color: #58240a;
+  color: #FF8C00;
   padding-left: 15px;
   width: 80%;
   height: 30px;
-  border: 1px solid #58240a;
+  border: 1px solid #FF8C00;
+  outline: 0;
+}
+.contact-us form select  {
+  color: #FF8C00;
+  padding-left: 15px;
+  width: 80%;
+  height: 30px;
+  border: 1px solid #FF8C00;
   outline: 0;
 }
 .contact-us form textarea {
-  color: #58240a;
+  color: #FF8C00;
   padding: 15px;
   width: 80%;
-  border: 1px solid #58240a;
+  border: 1px solid #FF8C00;
   outline: 0;
   max-width: 80%;
 }
 .submit-btn {
-  background-color: #58240a;
+  background-color: #FF8C00;
   color: #fff;
   font-size: 21px;
   font-weight: 600;
