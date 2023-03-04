@@ -11,7 +11,7 @@ body{
   justify-content: center;
   padding: 0;
   margin: 0;
-  background: url(images/Capture.png)no-repeat;
+  background: url(../images/Capture.png)no-repeat;
   background-size: cover;
 
 }

@@ -18,7 +18,7 @@
     />
     <link rel="icon" href="../images/iconcityclup.PNG" />
 </head>
-body>
+<body>
 <nav>
     <div class="container">
         <h1 class="logo"><a href="index.jsp">City Club</a></h1>
@@ -36,7 +36,15 @@ body>
 </nav>
 <section>
     <div class="container">
-
+        <form>
+            <select>
+                <option value="aa">aaaaaa</option>
+            </select>
+            <ta
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <button>Enregistrer</button>
+        </form>
     </div>
 </section>
 <footer>

@@ -1,10 +1,11 @@
 /* General */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 body {
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
-  font-family: "Oswald", sans-serif;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/City-Club.jpg);
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/City-Club1.jpg);
 
 }
 .container {
@@ -254,6 +255,7 @@ footer .menu span {
   grid-template-columns: auto auto auto auto;
   margin: 45px auto;
   width: 100%;
+  align-items: center;
   justify-content: space-between;
 }
 .product-item {
@@ -281,7 +283,7 @@ footer .menu span {
 }
 .product-item .description .desc {
   text-align: center;
-  color: #FFA500;
+  color: #ffffff;
 }
 /*.stars-price {*/
 /*  margin: 20px auto 0;*/
@@ -449,4 +451,58 @@ input[type=submit] :hover{
   font-weight: 600;
   outline: 0;
   cursor: pointer;
+}
+/*----------------detail_produit-----------------*/
+.container form{
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  opacity: 99%;
+  max-width: 260px;
+  margin: 200px auto 100px;
+  padding: 10px 45px 30px 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+.container form p{
+  font-size: 15px;
+  padding: 1px;
+  text-align: center;
+}
+.form.container form{
+  outline: 0;
+  border-radius: 10px;
+  background: #F2F2F2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.container form input:hover{
+  background-color: #FFA500;
+  transition: all 1s ease 0s;
+}
+.container form input:focus{
+  background-color:#FFA500;
+  transition: all 1s ease 0s;
+}
+.container form button{
+  text-transform: uppercase;
+  outline: 0;
+  border-radius: 10px;
+  background:#FF8C00;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.container form button:hover, .form button:active, .form button:focus{
+  background-color:#FF8C00;
+  transition: all 1s ease 0s;
 }

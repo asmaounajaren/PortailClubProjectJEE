@@ -47,14 +47,11 @@
                 <img src="../images/11.PNG" alt="" />
                 <div class="description">
                     <h3 class="title">AQUAGYM
-
-
                     </h3>
-                    <p class="desc">
-                        TL’aquagym est un sport complet qui fait travailler de nombreux muscles
-                        (abdominaux, fessiers, cuisses, bras, épaules)…
-                        Les bienfaits sont à la fois d’ordre esthétique et du côté de la santé
-                    </p>
+                    <p class="desc"> <i class="fas fa-check"></i> Accès aux cours VIRTUAL TRAINING </p>
+                    <p class="desc"> <i class="fas fa-check"></i> Accès aux cités des sports </p>
+                    <p class="desc"> <i class="fas fa-check"></i> diet plans </p>
+                    <p class="desc"> <i class="fas fa-check"></i> overall results </p>
                     <div class="stars-price">
                         <label class="price">150 MAD</label>
                     </div>
@@ -66,12 +63,10 @@
                 <img src="../images/13.PNG" alt="" />
                 <div class="description">
                     <h3 class="title">DANCE AFRO</h3>
-                    <p class="desc">
-                        L’afro-dance est un mix de mouvements de danses traditionnelles,
-                        de Hip-hop ou autres danses d’origine occidentale.
-                        affinée et des muscles saillants .
-
-                    </p>
+                    <p class="desc"> <i class="fas fa-check"></i> Accès aux cours VIRTUAL TRAINING</p>
+                    <p class="desc"> <i class="fas fa-check"></i> weight lifting </p>
+                    <p class="desc"> <i class="fas fa-check"></i> diet plans </p>
+                    <p class="desc"> <i class="fas fa-check"></i> overall results </p>
                     <div class="stars-price">
                         <label class="price">300 MAD</label>
                     </div>
@@ -82,13 +77,12 @@
                 <img src="../images/14.PNG" alt="" />
                 <div class="description">
                     <h3 class="title"> FUNCTIONAL ARMY</h3>
-                    <p class="desc">
-                        Functional City Army est la reprise des exercises du Cross
-                        training basée sur des efforts intenses pour une silhouette
-                        affinée et des muscles saillants .
-                    </p>
+                    <p class="desc"> <i class="fas fa-check"></i> Accès à toutes les activités du club</p>
+                    <p class="desc"> <i class="fas fa-check"></i> Accès aux cours VIRTUAL TRAINING</p>
+                    <p class="desc"> <i class="fas fa-check"></i> diet plans </p>
+                    <p class="desc"> <i class="fas fa-check"></i> overall results </p>
                     <div class="stars-price">
-                        <label class="price">300 MAD</label>
+                        <label class="price">1500 MAD</label>
                     </div>
                 </div>
                 <a href="detail_produit.jsp"><input type="submit" id="abonner3" name="abn1" value="S'abonner"/></a>
