@@ -11,12 +11,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Réserver Séance | City Club</title>
-    <link rel="stylesheet" href="styleee.css" />
+    <link rel="stylesheet" href="../css/styleee.css" />
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-    <link rel="icon" href="images/iconcityclup.PNG" />
+    <link rel="icon" href="../images/iconcityclup.PNG" />
 </head>
 body>
 <nav>
@@ -37,7 +37,7 @@ body>
 <section>
     <div class="container">
         <div class="contact-us">
-            <span>RÉSERVER MA CARTE</span>
+            <span>RÉSERVER UNE SÉANCE D'ESSAI</span>
             <h3>Indiquez vos coordonnées, on vous rappelle !</h3>
             <form action="">
                 <%--@declare id="name"--%><%--@declare id="email"--%><%--@declare id="ville"--%><label for="Name">Name</label>

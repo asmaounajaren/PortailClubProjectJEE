@@ -1,7 +1,8 @@
 body{
     padding: 0;
     margin: 0;
-    background: url(images/image-1.jpg)no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/image-1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 

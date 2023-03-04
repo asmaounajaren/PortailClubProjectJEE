@@ -5,16 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | City Club</title>
-    <link rel="stylesheet" href="styleee.css" />
+    <link rel="stylesheet" href="../css/styleee.css" />
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-    <link rel="icon" href="images/iconcityclup.PNG" />
+    <link rel="icon" href="../images/iconcityclup.PNG" />
 </head>
 <body>
+<div class="container">
 <nav>
-    <div class="container">
         <h1 class="logo"><a href="index.html">CITY CLUB</a></h1>
         <div class="menu">
             <ul>
@@ -26,11 +26,9 @@
                 <li><a href="Contact us.jsp">Contact</a></li>
             </ul>
         </div>
-    </div>
 </nav>
-<section>
     <div class="wrapper">
-        <img src="images/City-Club.jpg" alt="" />
+<%--        <img style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/City-Club.jpg)" alt="" />--%>
         <div>
             <span>Pratical Informations</span>
             <p>
@@ -40,14 +38,13 @@
             <button>Explore Now</button>
         </div>
     </div>
-    <div class="container">
-        <div class="featured-catagories">
-            <h2>Featured Activity</h2>
-        </div>
-
+    <div class="featured-catagories">
+        <h2>Featured Activity</h2>
+    </div>
         <div class="products">
+
             <div class="product-item">
-                <img src="images/11.PNG" alt="" />
+                <img src="../images/11.PNG" alt="" />
                 <div class="description">
                     <h3 class="title">AQUAGYM
 
@@ -59,81 +56,45 @@
                         Les bienfaits sont à la fois d’ordre esthétique et du côté de la santé
                     </p>
                     <div class="stars-price">
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <span class="price">150 MAD</span>
+                        <label class="price">150 MAD</label>
                     </div>
                 </div>
+                <input type="submit" name="abn1" value="S'abonner"/>
+
             </div>
             <div class="product-item">
-                <img src="images/12.PNG" alt="" />
-                <div class="description">
-                    <h3 class="title">CIRCUIT MINCEUR</h3>
-                    <p class="desc">
-                        Pour avoir un ventre plat, il est indispensable
-                        de travailler la ceinture abdominale !
-                        Circuit Minceur est destiné à activer le métabolisme, l’endurance
-                    </p>
-                    <div class="stars-price">
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <span class="price">145 MAD</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <img src="images/13.PNG" alt="" />
+                <img src="../images/13.PNG" alt="" />
                 <div class="description">
                     <h3 class="title">DANCE AFRO</h3>
                     <p class="desc">
                         L’afro-dance est un mix de mouvements de danses traditionnelles,
                         de Hip-hop ou autres danses d’origine occidentale.
+                        affinée et des muscles saillants .
+
                     </p>
                     <div class="stars-price">
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <span class="price">200 MAD</span>
+                        <label class="price">300 MAD</label>
                     </div>
                 </div>
+                <input type="submit" name="abn1" value="S'abonner"/>
             </div>
             <div class="product-item">
-                <img src="images/14.PNG" alt="" />
+                <img src="../images/14.PNG" alt="" />
                 <div class="description">
                     <h3 class="title"> FUNCTIONAL ARMY</h3>
                     <p class="desc">
                         Functional City Army est la reprise des exercises du Cross
                         training basée sur des efforts intenses pour une silhouette
-                        affinée et des muscles saillants.
+                        affinée et des muscles saillants .
                     </p>
                     <div class="stars-price">
-                        <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <span class="price">240 MAD</span>
+                        <label class="price">300 MAD</label>
                     </div>
                 </div>
+                <input type="submit" name="abn1" value="S'abonner"/>
             </div>
         </div>
-    </div>
+</div>
     <div class="argan-desc">
         <div>
             <span>Qu est -qu un CLUB CITY LADY ?</span>
@@ -150,7 +111,6 @@
             </p>
         </div>
     </div>
-</section>
 <footer>
     <div class="footer-content">
         <div class="menu">
