@@ -59,7 +59,7 @@
                         <label class="price">150 MAD</label>
                     </div>
                 </div>
-                <input type="submit" name="abn1" value="S'abonner"/>
+                <a href="detail_produit.jsp"><input type="submit" id="abonner1" name="abn1" value="S'abonner"/></a>
 
             </div>
             <div class="product-item">
@@ -76,7 +76,7 @@
                         <label class="price">300 MAD</label>
                     </div>
                 </div>
-                <input type="submit" name="abn1" value="S'abonner"/>
+                <a href="detail_produit.jsp"><input type="submit" id="abonner2" name="abn1" value="S'abonner"/></a>
             </div>
             <div class="product-item">
                 <img src="../images/14.PNG" alt="" />
@@ -91,7 +91,7 @@
                         <label class="price">300 MAD</label>
                     </div>
                 </div>
-                <input type="submit" name="abn1" value="S'abonner"/>
+                <a href="detail_produit.jsp"><input type="submit" id="abonner3" name="abn1" value="S'abonner"/></a>
             </div>
         </div>
 </div>
