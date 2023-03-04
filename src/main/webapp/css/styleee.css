@@ -255,7 +255,6 @@ footer .menu span {
   grid-template-columns: auto auto auto auto;
   margin: 45px auto;
   width: 100%;
-  align-items: center;
   justify-content: space-between;
 }
 .product-item {
@@ -280,8 +279,9 @@ footer .menu span {
 .product-item .description h3 {
   text-align: center;
   color:#FFA500;
+  font-weight: bold;
 }
-.product-item .description .desc {
+.product-item .description .desc{
   text-align: center;
   color: #ffffff;
 }
@@ -452,57 +452,90 @@ input[type=submit] :hover{
   outline: 0;
   cursor: pointer;
 }
+h3{
+  color: #FFFFFF;
+}
 /*----------------detail_produit-----------------*/
-.container form{
+
+.details form{
   font-family: "Roboto", sans-serif;
   position: relative;
   z-index: 1;
   background: #FFFFFF;
   opacity: 99%;
-  max-width: 260px;
-  margin: 200px auto 100px;
   padding: 10px 45px 30px 45px;
-  text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border-radius: 10px;
+  margin-right: 300px;
 }
-.container form p{
+.details form p{
   font-size: 15px;
   padding: 1px;
   text-align: center;
 }
-.form.container form{
-  outline: 0;
-  border-radius: 10px;
-  background: #F2F2F2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.container form input:hover{
+
+.details form input:hover{
   background-color: #FFA500;
   transition: all 1s ease 0s;
 }
-.container form input:focus{
+.details form input:focus{
   background-color:#FFA500;
   transition: all 1s ease 0s;
 }
-.container form button{
+.details form button{
   text-transform: uppercase;
   outline: 0;
   border-radius: 10px;
   background:#FF8C00;
-  width: 100%;
+  width: 20%;
   border: 0;
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
   cursor: pointer;
 }
-.container form button:hover, .form button:active, .form button:focus{
+.details form button:hover, .form button:active, .form button:focus{
   background-color:#FF8C00;
   transition: all 1s ease 0s;
+}
+.details {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  margin: auto;
+}
+.details form label {
+  color: #000000;
+  display: block;
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+
+}
+.details form input {
+  color: #ffffff;
+  padding-left: 15px;
+  width: 70%;
+  height: 30px;
+  background-color: transparent;
+  /*border: 1px solid #FF8C00;*/
+  border-radius: 10px;
+  outline: 0;
+}
+.details form select  {
+  color: #000000;
+  background-color: #ffffff;
+  padding-left: 15px;
+  width: 70%;
+  height: 30px;
+  border: 1px solid #FF8C00;
+  outline: 0;
+}
+.details form textarea {
+  color: #ffffff;
+  padding: 15px;
+  width: 80%;
+  background-color: transparent;
+  border: 1px solid #FF8C00;
+  outline: 0;
+  max-width: 80%;
 }

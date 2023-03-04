@@ -36,15 +36,26 @@
 </nav>
 <section>
     <div class="container">
-        <form>
-            <select>
-                <option value="aa">aaaaaa</option>
-            </select>
-            <ta
-            <input type="text" name="username" placeholder="username">
-            <input type="password" name="password" placeholder="password">
-            <button>Enregistrer</button>
-        </form>
+        <div class="details">
+            <span>RÉSERVER MA CARTE</span>
+            <h3>Indiquez vos coordonnées, on vous rappelle !</h3>
+            <form class="frm" action="">
+                <%--@declare id="name"--%><%--@declare id="email"--%><%--@declare id="ville"--%><label for="Name">Name</label>
+                <input type="text" name="Name" />
+                <label for="Email">Email</label>
+                <input type="email" name="Email" />
+                <label for="Name">Phone Number</label>
+                <input type="text" name="Phone Number" />
+                <label for="ville">Ville</label>
+                <select name="Ville" id="Ville">
+                    <option value="Rabat">Rabat</option>
+                    <option value="Agadir">Agadir</option>
+                    <option value="Tanger">Tanger</option>
+                    <option value="Casa Blanca">Casa Blanca</option>
+                </select>
+                <button class="submit-btn">RÉSERVER</button>
+            </form>
+        </div>
     </div>
 </section>
 <footer>
