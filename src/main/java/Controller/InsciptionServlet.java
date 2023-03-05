@@ -29,7 +29,7 @@ public class InsciptionServlet extends HttpServlet {
 
     String firstName = request.getParameter("firstName");
     String Email = request.getParameter("Email");
-        String password = request.getParameter("password");
+    String password = request.getParameter("password");
 
 
 

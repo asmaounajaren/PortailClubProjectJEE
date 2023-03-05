@@ -8,8 +8,8 @@ import Model.inscription;
 public class inscriptionDao {
     public int registerEmployee(inscription in) throws ClassNotFoundException {
         String INSERT_USERS_SQL = "INSERT INTO membre" +
-                "  (id_membre, nom_membre, email_membre, passwordd) VALUES " +
-                " (?, ?, ?, ?);";
+                "  ( nom_membre, email_membre, passwordd) VALUES " +
+                " (?, ?, ?);";
 
         int result = 0;
 
@@ -20,10 +20,10 @@ public class inscriptionDao {
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
-            preparedStatement.setInt(1, 1);
-            preparedStatement.setString(2, in.getFirstName());
-            preparedStatement.setString(3,in.getEmail());
-            preparedStatement.setString(4, in.getPassword());
+            //   preparedStatement.setInt(1, 1);
+            preparedStatement.setString(1, in.getFirstName());
+            preparedStatement.setString(2,in.getEmail());
+            preparedStatement.setString(3, in.getPassword());
 
 
             System.out.println(preparedStatement);
@@ -54,4 +54,3 @@ public class inscriptionDao {
     }
 
 }
-

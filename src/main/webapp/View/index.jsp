@@ -47,46 +47,46 @@
             <div class="product-item">
                 <img src="../images/11.PNG" alt="" />
                 <div class="description">
-                    <h3 class="title">AQUAGYM
+                    <h3 class="title">Basic Card
                     </h3>
                     <p class="desc"> <i class="fas fa-check"></i> Accès aux cours VIRTUAL TRAINING </p>
                     <p class="desc"> <i class="fas fa-check"></i> Accès aux cités des sports </p>
-                    <p class="desc"> <i class="fas fa-check"></i> diet plans </p>
+                    <p class="desc"> <i class="fas fa-check"></i> 1 mois </p>
                     <p class="desc"> <i class="fas fa-check"></i> overall results </p>
                     <div class="stars-price">
-                        <label class="price">150 MAD</label>
+                        <label  name="priix" class="price">150 MAD/1mois</label>
                     </div>
                 </div>
-                <a href="detail_produit.jsp"><input type="submit" id="abonner1" name="abn1" value="S'abonner"/></a>
+                <a href="detail_produit.jsp"><input type="submit" id="abonner1" name="abn1" value="Reserver carte basic"/></a>
 
             </div>
             <div class="product-item">
                 <img src="../images/13.PNG" alt="" />
                 <div class="description">
-                    <h3 class="title">DANCE AFRO</h3>
+                    <h3 class="title">Premium Card</h3>
                     <p class="desc"> <i class="fas fa-check"></i> Accès aux cours VIRTUAL TRAINING</p>
                     <p class="desc"> <i class="fas fa-check"></i> weight lifting </p>
-                    <p class="desc"> <i class="fas fa-check"></i> diet plans </p>
+                    <p class="desc"> <i class="fas fa-check"></i> 3 mois et un mois gratuit ! </p>
                     <p class="desc"> <i class="fas fa-check"></i> overall results </p>
                     <div class="stars-price">
-                        <label class="price">300 MAD</label>
+                        <label name="priix" class="price">300 MAD/3mois</label>
                     </div>
                 </div>
-                <a href="detail_produit.jsp"><input type="submit" id="abonner2" name="abn1" value="S'abonner"/></a>
+                <a href="detail_produit.jsp"><input type="submit" id="abonner2" name="abn1" value="Reserver carte Premium"/></a>
             </div>
             <div class="product-item">
                 <img src="../images/14.PNG" alt="" />
                 <div class="description">
-                    <h3 class="title"> FUNCTIONAL ARMY</h3>
+                    <h3 class="title"> Unlimited Card</h3>
                     <p class="desc"> <i class="fas fa-check"></i> Accès à toutes les activités du club</p>
                     <p class="desc"> <i class="fas fa-check"></i> Accès aux cours VIRTUAL TRAINING</p>
-                    <p class="desc"> <i class="fas fa-check"></i> diet plans </p>
+                    <p class="desc"> <i class="fas fa-check"></i> Diet plan </p>
                     <p class="desc"> <i class="fas fa-check"></i> overall results </p>
                     <div class="stars-price">
-                        <label class="price">1500 MAD</label>
+                        <label  name="priix" class="price">1500 MAD/an</label>
                     </div>
                 </div>
-                <a href="detail_produit.jsp"><input type="submit" id="abonner3" name="abn1" value="S'abonner"/></a>
+                <a href="detail_produit.jsp"><input type="submit" id="abonner3" name="abn1" value="Reserver carte ilimitée"/></a>
             </div>
         </div>
 </div>

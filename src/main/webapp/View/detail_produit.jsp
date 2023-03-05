@@ -39,15 +39,14 @@
         <div class="details">
             <span>RÉSERVER MA CARTE</span>
             <h3>Indiquez vos coordonnées, on vous rappelle !</h3>
-            <form class="frm" action="">
-                <%--@declare id="name"--%><%--@declare id="email"--%><%--@declare id="ville"--%><label for="Name">Name</label>
-                <input type="text" name="Name" />
-                <label for="Email">Email</label>
-                <input type="email" name="Email" />
-                <label for="Name">Phone Number</label>
-                <input type="text" name="Phone Number" />
+            <form class="frm" action="<%=request.getContextPath()%>/AbonnementServlet" method="post">
+                <%--@declare id="name"--%><%--@declare id="email"--%><%--@declare id="ville"--%>
+                <label for="nom">Name</label>
+                <input type="text" name="nom" id="nom"/>
+                <label for="email">Email</label>
+                <input type="email" name="email" />
                 <label for="ville">Ville</label>
-                <select name="Ville" id="Ville">
+                <select name="ville" id="ville">
                     <option value="Rabat">Rabat</option>
                     <option value="Agadir">Agadir</option>
                     <option value="Tanger">Tanger</option>
@@ -100,4 +99,5 @@
         Copyright © 2023, City Club, All rights reserved
     </div>
 </footer>
+</body>
 </html>

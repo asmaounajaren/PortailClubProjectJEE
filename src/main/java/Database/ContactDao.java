@@ -9,8 +9,8 @@ import Model.Contact;
 
 public class ContactDao {
     public int registerEmployee(Contact in) throws ClassNotFoundException {
-        String INSERT_USERS_SQL = "INSERT INTO contacte" +
-                "  (id,last_first_name, Email, Message) VALUES " +
+        String INSERT_USERS_SQL = "INSERT INTO contac" +
+                "  (first_name,Email, phone, Message) VALUES " +
                 " (?, ?, ?, ?);";
 
         int result = 0;
@@ -22,9 +22,10 @@ public class ContactDao {
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
-            preparedStatement.setInt(1, 1);
-            preparedStatement.setString(2, in.getName());
-            preparedStatement.setString(3,in.getEmail());
+            // preparedStatement.setInt(1, 1);
+            preparedStatement.setString(1, in.getName());
+            preparedStatement.setString(2,in.getEmail());
+            preparedStatement.setString(3,in.getPhoneNumber());
             preparedStatement.setString(4, in.getMessage());
 
 
@@ -56,5 +57,3 @@ public class ContactDao {
     }
 
 }
-
-

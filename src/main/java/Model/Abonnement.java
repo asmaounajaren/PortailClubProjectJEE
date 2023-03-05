@@ -1,17 +1,19 @@
 package Model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Abonnement {
+public class Abonnement implements Serializable {
+
     private  int code_abonnement;
     private String libelle;
     private String description_abonnement;
     private double tarif;
-    private Date date_debut;
-    private Date date_fin;
+    private String date_debut;
+    private String date_fin;
     private  boolean etat;
     public Abonnement(){}
-    public Abonnement(String libelle, String description_abonnement, double tarif, Date date_debut, Date date_fin) {
+    public Abonnement(String libelle, String description_abonnement, double tarif, String date_debut, String date_fin) {
         this.libelle = libelle;
         this.description_abonnement = description_abonnement;
         this.tarif = tarif;
@@ -51,19 +53,19 @@ public class Abonnement {
         this.tarif = tarif;
     }
 
-    public Date getDate_debut() {
+    public String getDate_debut() {
         return date_debut;
     }
 
-    public void setDate_debut(Date date_debut) {
+    public void setDate_debut(String date_debut) {
         this.date_debut = date_debut;
     }
 
-    public Date getDate_fin() {
+    public String getDate_fin() {
         return date_fin;
     }
 
-    public void setDate_fin(Date date_fin) {
+    public void setDate_fin(String date_fin) {
         this.date_fin = date_fin;
     }
 
@@ -86,5 +88,13 @@ public class Abonnement {
                 ", date_fin=" + date_fin +
                 ", etat=" + etat +
                 '}';
+    }
+
+    public Abonnement( String libelle, String description_abonnement, double tarif) {
+        this.libelle = libelle;
+        this.description_abonnement = description_abonnement;
+        this.tarif = tarif;
+//        this.date_debut = date_debut;
+//        this.date_fin = date_fin;
     }
 }

@@ -1,42 +1,42 @@
-package Controller;
+package Database;
 
-import Database.Connexion;
 import Model.Abonnement;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 
-public class AbonnementController {
+public class AbonnementDAO {
     private static final String INSERT="INSERT INTO abonnement(`libelle`, `description_abonnement`, `tarif`, `date_debut`, `date_fin`) VALUES (?,?,?,?,?)";
-    private static final String SELECT="SELECT * FROM abonnement";
+    private static final String SELECT="SELECT * FROM abonnement where id_membre=?";
 
-    public static Abonnement Ajouter(Abonnement abn){
-        Connection cnx= Connexion.getConnection();
-        try {
-            PreparedStatement preparedStatement=cnx.prepareStatement(INSERT);
+    public  int Ajouter(Abonnement abn) throws ClassNotFoundException {
+        int nb=0;
+
+        try (Connection cnx = Connexion.getConnection();
+
+             PreparedStatement preparedStatement=cnx.prepareStatement(INSERT))
+        {
             preparedStatement.setString(1,abn.getLibelle());
             preparedStatement.setString(2,abn.getDescription_abonnement());
             preparedStatement.setDouble(3,abn.getTarif());
-            preparedStatement.setDate(4, (Date) abn.getDate_debut());
-            preparedStatement.setDate(5,(Date) abn.getDate_fin());
+            preparedStatement.setString(4, abn.getDate_debut());
+            preparedStatement.setString(5, abn.getDate_fin());
 
-            int nb=preparedStatement.executeUpdate();
-            if(nb>0)System.out.println("Bien Ajouté");
-            else System.out.println("Echec de l'ajout");
-        }catch (Exception e){
-            e.getMessage();
+            nb=preparedStatement.executeUpdate();
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
         }
-        return abn;
+//            if(nb>0)System.out.println("Bien Ajouté");
+//            else System.out.println("Echec de l'ajout");
+        return nb;
     }
-    public static ArrayList<Abonnement> getList(){
+    public ArrayList<Abonnement> getList(int id){
         ArrayList<Abonnement> listAb=new ArrayList<>();
         Connection cnx=Connexion.getConnection();
         try {
             PreparedStatement ps=cnx.prepareStatement(SELECT);
+            ps.setInt(1,id);
+
             ResultSet rs=ps.executeQuery();
             while (rs.next()){
                 Abonnement ab=new Abonnement();
@@ -44,11 +44,10 @@ public class AbonnementController {
                 ab.setLibelle(rs.getString("libelle"));
                 ab.setDescription_abonnement(rs.getString("description_abonnement"));
                 ab.setTarif(rs.getDouble("tarif"));
-                ab.setDate_debut(rs.getDate("date_debut"));
-                ab.setDate_fin(rs.getDate("date_fin"));
+                ab.setDate_debut(String.valueOf(rs.getDate("date_debut")));
+                ab.setDate_fin(String.valueOf(rs.getDate("date_fin")));
                 ab.setEtat(rs.getBoolean("etat"));
                 listAb.add(ab);
-
             }
         }catch (Exception e){e.getMessage();}
         return listAb;
