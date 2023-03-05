@@ -14,12 +14,10 @@
 <body>
 <div class="form">
   <p>Login</p>
-<%--  <%request.getContextPath()%>/View/index.jsp--%>
-
-  <form action="" method="post">
-    <input type="email" name="email_login" placeholder="email">
-    <input type="password" name="password_login" placeholder="password">
-    <input type="submit" name="btn" value="login"/>
+  <form action="<%=request.getContextPath()%>/LoginServlet" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <button>login</button>
     <p class="message">Not registered? <a href="inscription.jsp">Create an account</a></p>
   </form>
 </div>

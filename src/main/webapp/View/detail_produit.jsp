@@ -26,10 +26,9 @@
             <ul>
                 <li><a href="index.jsp">Home</a></li>
                 <li>
-                    <a href="réserver séance gratuit.jsp">Réserver Séance</a>
+                    <a  href="réserver séance gratuit.jsp">Réserver Séance</a>
                 </li>
-                <li><a href="">CRUD</a></li>
-                <li class="where"><a href="Contact us.jsp">Contact Us</a></li>
+                <li ><a href="Contact us.jsp">Contact Us</a></li>
             </ul>
         </div>
     </div>

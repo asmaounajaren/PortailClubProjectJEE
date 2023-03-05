@@ -11,7 +11,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Réserver Séance | City Club</title>
-    <link rel="stylesheet" href="../css/styleee.css" />
+    <link rel="stylesheet" href="../css/style3.css" />
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -25,10 +25,10 @@ body>
         <div class="menu">
             <ul>
                 <li><a href="index.jsp">Home</a></li>
-                <li>
+                <li class="where">
                     <a href="réserver séance gratuit.jsp">Réserver Séance</a>
                 </li>
-                <li class="where"><a href="Contact us.jsp">Contact Us</a></li>
+                <li ><a href="Contact us.jsp">Contact Us</a></li>
             </ul>
         </div>
     </div>

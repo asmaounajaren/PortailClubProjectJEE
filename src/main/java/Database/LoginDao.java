@@ -23,7 +23,7 @@ public class LoginDao {
 
             System.out.println(preparedStatement);
             ResultSet rs = preparedStatement.executeQuery();
-            if (rs.next()) status=true;
+            status = rs.next();
 
         } catch (SQLException e) {
             // process sql exception

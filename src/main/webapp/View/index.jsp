@@ -21,9 +21,9 @@
             <ul>
                 <li class="where"><a href="index.jsp">Home</a></li>
                 <li>
-                    <a href="réserver séance gratuit.jsp">Réserver Séance</a>
+                    <a class="reserver" href="réserver séance gratuit.jsp">Réserver Séance</a>
                 </li>
-                <li><a href="Contact us.jsp">Contact</a></li>
+                <li><a class="contact" href="Contact us.jsp">Contact</a></li>
             </ul>
         </div>
 </nav>
