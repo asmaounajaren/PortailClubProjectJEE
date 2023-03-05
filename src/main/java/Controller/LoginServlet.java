@@ -1,5 +1,6 @@
 package Controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -25,18 +26,26 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
+        String username = request.getParameter("email_login");
+        String password = request.getParameter("password_login");
         Membre loginBean = new Membre();
-        loginBean.setUsername(username);
+        loginBean.setEmail(username);
         loginBean.setPassword(password);
 
         try {
             if (loginDao.validate(loginBean)) {
-                response.sendRedirect("View/index.jsp");
+                System.out.println("login successful");
+                RequestDispatcher rd=request.getRequestDispatcher("View/index.jsp");
+                rd.forward(request,response);
+
             } else {
-                HttpSession session = request.getSession();
+                request.setAttribute("erreur","email ou Mot de passe invalide");
+                RequestDispatcher rd=request.getRequestDispatcher("View/login.jsp");
+                rd.forward(request,response);
+                System.out.println("login failed");
+
             }
+            System.out.println(loginDao.validate(loginBean));
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

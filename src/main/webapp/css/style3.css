@@ -456,7 +456,9 @@ h3{
   color: #FFFFFF;
 }
 /*----------------detail_produit-----------------*/
-
+.details h2{
+  color: #FF8C00;
+}
 .details form{
   font-family: "Roboto", sans-serif;
   position: relative;
@@ -512,7 +514,7 @@ h3{
 
 }
 .details form input {
-  color: #ffffff;
+  color: #000000;
   padding-left: 15px;
   width: 70%;
   height: 30px;
@@ -531,7 +533,7 @@ h3{
   outline: 0;
 }
 .details form textarea {
-  color: #ffffff;
+  color: #000000;
   padding: 15px;
   width: 80%;
   background-color: transparent;

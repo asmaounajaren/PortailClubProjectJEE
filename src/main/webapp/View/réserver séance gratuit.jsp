@@ -28,7 +28,6 @@ body>
                 <li>
                     <a href="réserver séance gratuit.jsp">Réserver Séance</a>
                 </li>
-                <li><a href="">CRUD</a></li>
                 <li class="where"><a href="Contact us.jsp">Contact Us</a></li>
             </ul>
         </div>
@@ -45,14 +44,16 @@ body>
                 <label for="Email">Email</label>
                 <input type="email" name="Email" />
                 <label for="Name">Phone Number</label>
-                <input type="text" name="Phone Number" />
-                    <label for="ville">Ville</label>
-                    <select name="Ville" id="Ville">
-                        <option value="Rabat">Rabat</option>
-                        <option value="Agadir">Agadir</option>
-                        <option value="Tanger">Tanger</option>
-                        <option value="Casa Blanca">Casa Blanca</option>
-                    </select>
+                <input type="text" name="Phone" />
+                <label for="Ville">Ville</label>
+                <input type="text" name="Ville" />
+
+<%--                    <select name="Ville" id="Ville">--%>
+<%--                        <option value="Rabat">Rabat</option>--%>
+<%--                        <option value="Agadir">Agadir</option>--%>
+<%--                        <option value="Tanger">Tanger</option>--%>
+<%--                        <option value="Casa Blanca">Casa Blanca</option>--%>
+<%--                    </select>--%>
                 <button class="submit-btn">RÉSERVER</button>
             </form>
         </div>

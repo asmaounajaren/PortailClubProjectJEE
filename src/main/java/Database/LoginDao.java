@@ -17,13 +17,13 @@ public class LoginDao {
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection
-                     .prepareStatement("select * from membre where nom_membre = ? and passwordd= ? ")) {
-            preparedStatement.setString(1, loginBean.getUsername());
+                     .prepareStatement("select * from membre where email_membre = ? and passwordd= ? ")) {
+            preparedStatement.setString(1, loginBean.getEmail());
             preparedStatement.setString(2, loginBean.getPassword());
 
             System.out.println(preparedStatement);
             ResultSet rs = preparedStatement.executeQuery();
-            status = rs.next();
+            if (rs.next()) status=true;
 
         } catch (SQLException e) {
             // process sql exception
