@@ -345,7 +345,7 @@ footer .menu span {
   text-decoration: underline;
 }
 .foreign-distribution img {
-  image-rendering:cover;
+  /*image-rendering:cover;*/
   width: 100%;
 }
 

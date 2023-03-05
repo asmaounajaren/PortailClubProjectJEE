@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | City Club</title>
-    <link rel="stylesheet" href="../css/styleee.css" />
+    <link rel="stylesheet" href="../css/style3.css" />
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -13,6 +13,7 @@
     <link rel="icon" href="../images/iconcityclup.PNG" />
 </head>
 <body>
+
 <nav>
     <div class="container">
         <h1 class="logo"><a href="index.jsp">City Club</a></h1>
@@ -33,7 +34,7 @@
         <div class="contact-us">
             <span>REMPLISSEZ LE FORMULAIRE</span>
             <h3>CITYCLUB est à l’écoute, nous serions très ravis d’être en contact avec vous.</h3>
-            <form action="">
+            <form action="<%=request.getContextPath()%>/ContactServlet" method="post">
                 <%--@declare id="name"--%><%--@declare id="email"--%><label for="Name">Name</label>
                 <input type="text" name="Name" />
                 <label for="Email">Email</label>
@@ -42,7 +43,7 @@
                 <input type="text" name="Phone Number" />
                 <label for="Name">Message</label>
                 <textarea
-                        name=""
+
                         id=""
                         cols="30"
                         rows="10"
@@ -96,5 +97,6 @@
         Copyright © 2023, City Club, All rights reserved
     </div>
 </footer>
+</form>
 </body>
 </html>
