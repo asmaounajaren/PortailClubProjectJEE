@@ -11,24 +11,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<title> Registration or Sign Up form in HTML CSS | CodingLab </title>-->
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
 <div class="wrapper">
+
     <h2>Registration</h2>
-    <form action="#">
+    <form action="<%=request.getContextPath()%>/InsciptionServlet" method="post">
         <div class="input-box">
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text"  name="firstName" placeholder="Enter your name" required>
         </div>
         <div class="input-box">
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" name="Email" placeholder="Enter your email" required>
         </div>
         <div class="input-box">
-            <input type="password" placeholder="Create password" required>
+            <input type="password" name="password" placeholder="Create password" required>
         </div>
-        <div class="input-box">
-            <input type="password" placeholder="Confirm password" required>
-        </div>
+
         <div class="policy">
             <input type="checkbox">
             <h3>I accept all terms & condition</h3>
