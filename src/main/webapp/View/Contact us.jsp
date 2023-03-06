@@ -20,7 +20,7 @@
         <div class="menu">
             <ul>
                 <li><a href="index.jsp">Home</a></li>
-                <li><a href="réserver séance gratuit.jsp">Réserver Séance</a></li>
+                <li><a href="reserverseancegratuit.jsp">Réserver Séance</a></li>
                 <li class="where"><a href="Contact us.jsp">Contact Us</a></li>
             </ul>
         </div>
@@ -58,7 +58,7 @@
             <ul>
                 <li><a href="index.jsp">Home</a></li>
                 <li>
-                    <a href="réserver séance gratuit.jsp">Réserver Séance</a>
+                    <a href="reserverseancegratuit.jsp">Réserver Séance</a>
                 </li>
                 <li><a href="commander.jsp">CRUD</a></li>
                 <li><a href="Contact us.jsp">Contact Us</a></li>

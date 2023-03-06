@@ -1,5 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%
 
+    if (session.getAttribute("username") ==null) {
+        response.sendRedirect("login.jsp");
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +26,7 @@
             <ul>
                 <li class="where"><a href="index.jsp">Home</a></li>
                 <li>
-                    <a class="reserver" href="réserver séance gratuit.jsp">Réserver Séance</a>
+                    <a class="reserver" href="reserverseancegratuit.jsp">Réserver Séance</a>
                 </li>
                 <li><a class="contact" href="Contact us.jsp">Contact</a></li>
             </ul>
@@ -44,7 +49,7 @@
         <div class="products">
 
             <div class="product-item">
-                <img src="../images/11.PNG" alt="" />
+                <img src="../images/foot_.jpg" alt="" />
                 <div class="description">
                     <h3 class="title">Basic Card
                     </h3>
@@ -60,7 +65,7 @@
 
             </div>
             <div class="product-item">
-                <img src="../images/13.PNG" alt="" />
+                <img src="../images/111.jpg" alt="" />
                 <div class="description">
                     <h3 class="title">Premium Card</h3>
                     <p class="desc"> <i class="fas fa-check"></i> Accès aux cours VIRTUAL TRAINING</p>
@@ -112,7 +117,7 @@
             <ul>
                 <li><a href="index.jsp">Home</a></li>
                 <li>
-                    <a href="réserver séance gratuit.jsp">Réserver Séance</a>
+                    <a href="reserverseancegratuit.jsp">Réserver Séance</a>
                 </li>
                 <li><a href="">CRUD</a></li>
                 <li class="where"><a href="Contact us.jsp">Contact Us</a></li>

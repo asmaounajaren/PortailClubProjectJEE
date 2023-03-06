@@ -11,7 +11,7 @@ body{
   justify-content: center;
   padding: 0;
   margin: 0;
-  background: url(../images/Capture.png)no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/image-1.jpg);
   background-size: cover;
 
 }

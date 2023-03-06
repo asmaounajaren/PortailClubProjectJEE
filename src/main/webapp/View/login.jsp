@@ -15,8 +15,8 @@
 <div class="form">
   <p>Login</p>
   <form action="<%=request.getContextPath()%>/LoginServlet" method="post">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
+    <input type="text" name="username" placeholder="username" required>
+    <input type="password" name="password" placeholder="password" required>
     <button>login</button>
     <p class="message">Not registered? <a href="inscription.jsp">Create an account</a></p>
   </form>

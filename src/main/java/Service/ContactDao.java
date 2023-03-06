@@ -1,10 +1,9 @@
-package Database;
+package Service;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import Model.Contact;
 import Model.Contact;
 
 public class ContactDao {

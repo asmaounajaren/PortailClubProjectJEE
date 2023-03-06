@@ -8,7 +8,7 @@ import  jakarta.servlet.http.HttpServlet;
 import  jakarta.servlet.http.HttpServletRequest;
 import  jakarta.servlet.http.HttpServletResponse;
 
-import Database.inscriptionDao;
+import Service.inscriptionDao;
 import Model.inscription;
 
 @WebServlet(name = "InsciptionServlet", value = "/InsciptionServlet")

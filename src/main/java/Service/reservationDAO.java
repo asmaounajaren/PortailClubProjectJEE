@@ -1,4 +1,4 @@
-package Database;
+package Service;
 
 import Model.inscription;
 
@@ -15,8 +15,10 @@ public class reservationDAO {
 
         int result = 0;
 
+        Class.forName("com.mysql.jdbc.Driver");
 
-        try (Connection connection = Connexion.getConnection();
+        try (Connection connection = DriverManager
+                .getConnection("jdbc:mysql://localhost:3306/portailclub","root","");
 
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
             preparedStatement.setString(1, in.getFirstName());
@@ -24,7 +26,7 @@ public class reservationDAO {
             preparedStatement.setString(3, in.getVille());
             preparedStatement.setString(4, in.getEmail());
 
-            System.out.println(preparedStatement);
+            System.out.println("req"+preparedStatement);
             result = preparedStatement.executeUpdate();
 
         } catch (SQLException e) {

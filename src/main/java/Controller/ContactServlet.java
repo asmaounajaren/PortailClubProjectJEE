@@ -2,15 +2,13 @@ package Controller;
 
 import java.io.IOException;
 
-import Database.inscriptionDao;
-import Model.inscription;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import  jakarta.servlet.http.HttpServlet;
 import  jakarta.servlet.http.HttpServletRequest;
 import  jakarta.servlet.http.HttpServletResponse;
 
-import Database.ContactDao;
+import Service.ContactDao;
 import Model.Contact;
 
 
@@ -48,7 +46,6 @@ public class ContactServlet extends HttpServlet {
         try {
             employeeDao.registerEmployee(employee);
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 

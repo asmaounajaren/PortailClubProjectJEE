@@ -1,17 +1,12 @@
 package Controller;
 
-import Database.AbonnementDAO;
-import Database.inscriptionDao;
+import Service.AbonnementDAO;
 import Model.Abonnement;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-import java.awt.*;
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import static java.lang.System.out;
 
@@ -38,20 +33,20 @@ public class AbonnementServlet extends HttpServlet {
             abonnement.setLibelle("Basic Card");
             abonnement.setDescription_abonnement("pour un mois, Accès aux cours VIRTUAL TRAINING,Accès aux cités des sports");
             abonnement.setTarif(150.00);
-            abonnement.setDate_debut("2023/03/06");
-            abonnement.setDate_fin("2023/04/06");
+            abonnement.setDate_debut("2023/03/07");
+            abonnement.setDate_fin("2023/04/07");
         }else if("Reserver carte Premium".equalsIgnoreCase(c)){
             abonnement.setLibelle("Premium Card");
             abonnement.setDescription_abonnement("3 mois et un mois gratuit! Accès aux cours VIRTUAL TRAINING,Accès aux cités des sports");
             abonnement.setTarif(300.00);
-            abonnement.setDate_debut("2023/03/06");
-            abonnement.setDate_fin("2023/06/06");
+            abonnement.setDate_debut("2023/03/07");
+            abonnement.setDate_fin("2023/06/07");
         }else{
             abonnement.setLibelle("Unlimited Card");
             abonnement.setDescription_abonnement("Acces à toutes les activites du club, Acces aux cours VIRTUAL TRAINING, diet plan,overall results </p>");
             abonnement.setTarif(1500.00);
-            abonnement.setDate_debut("2024/03/06");
-            abonnement.setDate_fin("2024/03/06");
+            abonnement.setDate_debut("2024/03/07");
+            abonnement.setDate_fin("2024/03/07");
         }
 
             int r=abonnementDAO.Ajouter(abonnement);

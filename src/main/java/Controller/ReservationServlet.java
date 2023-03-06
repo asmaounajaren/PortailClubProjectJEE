@@ -1,7 +1,6 @@
 package Controller;
 
-import Database.inscriptionDao;
-import Database.reservationDAO;
+import Service.reservationDAO;
 import Model.inscription;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -45,5 +44,8 @@ public class ReservationServlet extends HttpServlet {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
+        response.sendRedirect("View/reserverseancegratuit.jsp");
+
     }
 }

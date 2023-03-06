@@ -1,4 +1,4 @@
-package Database;
+package Service;
 
 import Model.Abonnement;
 

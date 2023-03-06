@@ -1,17 +1,9 @@
 package Test;
 
-import Database.AbonnementDAO;
-import Database.ContactDao;
-import Database.inscriptionDao;
+import Service.AbonnementDAO;
 import Model.Abonnement;
-import Model.Contact;
-import Model.Membre;
-import Model.inscription;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Testmethods {
     public static void main(String[] args) throws ClassNotFoundException {

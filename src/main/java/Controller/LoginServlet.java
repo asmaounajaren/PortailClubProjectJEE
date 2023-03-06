@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import jakarta.servlet.http.HttpSession;
 import Model.Membre;
-import Database.LoginDao;
+import Service.LoginDao;
 
 @WebServlet(name = "LoginServlet", value = "/LoginServlet")
 public class LoginServlet extends HttpServlet {
@@ -33,9 +33,12 @@ public class LoginServlet extends HttpServlet {
 
         try {
             if (loginDao.validate(loginBean)) {
+                HttpSession session = request.getSession();
+                session.setAttribute("username",username);
                 response.sendRedirect("View/index.jsp");
             } else {
-                HttpSession session = request.getSession();
+                request.setAttribute("err","Email ou Mot de passe invalide");
+//                response.sendRedirect("View/login.jsp");
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

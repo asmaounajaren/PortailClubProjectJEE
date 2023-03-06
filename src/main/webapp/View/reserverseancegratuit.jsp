@@ -26,7 +26,7 @@ body>
             <ul>
                 <li><a href="index.jsp">Home</a></li>
                 <li class="where">
-                    <a href="réserver séance gratuit.jsp">Réserver Séance</a>
+                    <a href="reserverseancegratuit.jsp">Réserver Séance</a>
                 </li>
                 <li ><a href="Contact us.jsp">Contact Us</a></li>
             </ul>
@@ -38,7 +38,7 @@ body>
         <div class="contact-us">
             <span>RÉSERVER UNE SÉANCE D'ESSAI</span>
             <h3>Indiquez vos coordonnées, on vous rappelle !</h3>
-            <form action="">
+            <form action="<%=request.getContextPath()%>/ReservationServlet" method="post">
                 <%--@declare id="name"--%><%--@declare id="email"--%><%--@declare id="ville"--%><label for="Name">Name</label>
                 <input type="text" name="Name" />
                 <label for="Email">Email</label>
@@ -47,14 +47,7 @@ body>
                 <input type="text" name="Phone" />
                 <label for="Ville">Ville</label>
                 <input type="text" name="Ville" />
-
-<%--                    <select name="Ville" id="Ville">--%>
-<%--                        <option value="Rabat">Rabat</option>--%>
-<%--                        <option value="Agadir">Agadir</option>--%>
-<%--                        <option value="Tanger">Tanger</option>--%>
-<%--                        <option value="Casa Blanca">Casa Blanca</option>--%>
-<%--                    </select>--%>
-                <button class="submit-btn">RÉSERVER</button>
+                <button type="submit" class="submit-btn">RÉSERVER</button>
             </form>
         </div>
     </div>
@@ -66,9 +59,8 @@ body>
             <ul>
                 <li><a href="index.jsp">Home</a></li>
                 <li>
-                    <a href="réserver séance gratuit.jsp">Réserver Séance</a>
+                    <a href="reserverseancegratuit.jsp">Réserver Séance</a>
                 </li>
-                <li><a href="">CRUD</a></li>
                 <li><a href="Contact us.jsp">Contact Us</a></li>
             </ul>
         </div>
